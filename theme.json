@@ -1,0 +1,18 @@
+{
+  "id": "MyLoadingBar",
+  "name": "My Loading Bar",
+  "description": "Loading bar fluide basee sur la vraie progression reelle (bytes) — une seule barre, 100% garanti, gestion split-view",
+  "author": "Impre",
+  "version": "1.0.0",
+  "js": true,
+  "scripts": {
+    "loadingbar.uc.js": {
+      "name": "LoadingBar Engine",
+      "description": "Progress listener + renderer pour la loading bar",
+      "include": ["chrome://browser/content/browser.xhtml"]
+    }
+  },
+  "style": { "chrome": "chrome.css" },
+  "tags": ["Javascript"],
+  "fork": ["zen"]
+}
