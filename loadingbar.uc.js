@@ -29,7 +29,7 @@
             downloadingProgress: 70,   // Palier fallback 3 (progress detecte)
             maxRealProgress: 95,       // Plafond progression reelle (garde 5% pour la completion)
             debounceMs: 150,           // Delai avant completion sur STATE_STOP (anti clignotement)
-            completeHoldMs: 200,       // Maintien a 100% avant fade
+            completeHoldMs: 400,       // Maintien a 100% avant fade (doit etre > transition CSS width 300ms)
             fadeDuration: 300,         // Duree du fade out (doit matcher la transition CSS)
             fallbackTimerMs: 500,      // Si pas de progression reelle apres ce delai → paliers
         };
