@@ -159,7 +159,7 @@
         // ════════════════════════════════════════════════════════════════
         const progressListener = {
             onStateChange(browser, webProgress, request, stateFlags, status) {
-                if (!webProgress.isTopLevel) return;
+                if (!webProgress?.isTopLevel) return;
 
                 const WPL = Ci.nsIWebProgressListener;
                 const isStart = stateFlags & WPL.STATE_START;
@@ -194,7 +194,7 @@
 
             onProgressChange(browser, webProgress, request,
                              curSelf, maxSelf, curTotal, maxTotal) {
-                if (!webProgress.isTopLevel) return;
+                if (!webProgress?.isTopLevel) return;
                 if (maxTotal > 0) {
                     const pct = Math.min(
                         CONFIG.maxRealProgress,
